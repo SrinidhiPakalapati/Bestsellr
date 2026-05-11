@@ -157,15 +157,14 @@ body {
 }
 
 .hero-title h1 {
-    font-size: clamp(52px, 7vw, 84px);
+    font-size: clamp(44px, 6vw, 72px);
 
     line-height: 1.08;
 
-    font-weight: 600;
+    font-weight: 550;
 
     letter-spacing: -1px;
 }
-
 .hero-bottom-title {
     margin-top: 6px;
 }
