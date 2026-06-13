@@ -118,6 +118,7 @@ body {
     padding: 10px 20px 70px;
 
     position: relative;
+
 }
 .hero-section::before {
     content: "";
@@ -260,6 +261,10 @@ body {
 
     position: relative;
     overflow: hidden;
+
+    
+    border-bottom-left-radius: 50% 50px;
+    border-bottom-right-radius: 50% 50px;
 }
 
 .about-text {
@@ -270,6 +275,7 @@ body {
     padding-left: 28px;
 
     transform: translateX(-24px);
+
 }
 
 .about-text h2 {
@@ -294,7 +300,12 @@ body {
 
 .process-section {
     width: 100%;
-    background: #0b2f50;
+    background:
+        linear-gradient(
+            rgba(17, 53, 89, 0.90),
+            rgba(17, 53, 89, 0.93)
+        ),
+        url("images/bg-pattern.png");
 
     text-align: center;
 
@@ -401,12 +412,14 @@ body {
     text-wrap: balance;
 }
 
-/* FAQ */
 .faq-section {
     width: 100%;
     background: #11395e;
 
     padding: 85px 8% 95px;
+
+    border-top-left-radius: 50% 50px;
+    border-top-right-radius: 50% 50px;
 }
 
 .faq-section h2 {
