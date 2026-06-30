@@ -5,12 +5,6 @@ const showcaseProjects = [
         cover: "images/unsentletter.png", 
         website: "https://hackclubvizag.github.io/Unsent-Letter/"
     },
-    { 
-        title: "Story Title 2", 
-        author: "By Author Name", 
-        cover: "images/bookmarks.png", 
-        website: "https://example.com/story2"
-    },
 ];
 
 function generateShowcaseCards(projects, containerId) {
