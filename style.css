@@ -980,3 +980,197 @@ footer p a:hover {
     margin-left: auto;
     margin-right: auto;
 }
+
+.showcase-section {
+    width: 100%;
+    background: #113559;
+    padding: 85px 8% 95px;
+}
+
+.showcase-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.showcase-section h2 {
+    font-size: clamp(34px, 4vw, 54px);
+    margin-bottom: 8px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.showcase-section h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 4px;
+    background: #f0aa25;
+    border-radius: 20px;
+}
+
+.showcase-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.showcase-card {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border: 1.5px solid rgba(2, 145, 181, 0.3);
+    border-radius: 32px;
+    padding: 20px;
+    align-items: center;
+    transition: border-color 0.3s ease;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.showcase-card:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+    border-color: rgba(2, 145, 181, 0.5);
+}
+
+.showcase-cover {
+    width: 160px;
+    height: 240px;
+    border-radius: 24px;
+    border: 2px solid rgba(2, 145, 181, 0.4);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(2, 145, 181, 0.15), rgba(2, 213, 255, 0.1));
+    flex-shrink: 0;
+    transition: border-color 0.3s ease;
+}
+
+.showcase-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.showcase-card:hover .showcase-cover {
+    border-color: rgba(2, 145, 181, 0.6);
+}
+
+.showcase-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.showcase-info h3 {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    font-weight: 650;
+    letter-spacing: -0.3px;
+}
+
+.showcase-info p {
+    font-size: 15px;
+    color: #d7e6ee;
+    margin: 0;
+    font-weight: 500;
+}
+
+.showcase-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #02d4ff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: gap 0.3s ease;
+    width: fit-content;
+}
+
+.showcase-link:hover {
+    gap: 12px;
+    color: #f0aa25;
+}
+
+.showcase-link::after {
+    content: "→";
+}
+
+@media (max-width: 950px) {
+    .showcase-section {
+        padding: 70px 8%;
+    }
+
+    .showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .showcase-card {
+        padding: 18px;
+        gap: 16px;
+    }
+
+    .showcase-cover {
+        width: 140px;
+        height: 210px;
+    }
+
+    .showcase-info h3 {
+        font-size: 18px;
+    }
+
+    .showcase-info p {
+        font-size: 14px;
+    }
+
+    .showcase-link {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .showcase-section {
+        padding: 60px 6%;
+    }
+
+    .showcase-grid {
+        gap: 20px;
+    }
+
+    .showcase-card {
+        padding: 16px;
+        gap: 14px;
+    }
+
+    .showcase-cover {
+        width: 120px;
+        height: 180px;
+    }
+
+    .showcase-info h3 {
+        font-size: 16px;
+    }
+
+    .showcase-info p {
+        font-size: 13px;
+    }
+
+    .showcase-link {
+        font-size: 12px;
+    }
+}
